@@ -2,24 +2,24 @@
 # PUNO
 ############# Cargar las librerias ###########################
 
-*library(tidyverse)
-*library(sf)
-*library(sp)
-*library(raster)
-*library(rgee)
-*library(mapview)
-*library(mapedit)
-*library(ggplot2)
-*library(lubridate)
+library(tidyverse)
+library(sf)
+library(sp)
+library(raster)
+library(rgee)
+library(mapview)
+library(mapedit)
+library(ggplot2)
+library(lubridate)
 
 ############ INICIALIZAR EARTH ENGIME ##############################
 
-*ee_Initialize("carlosflores37")
+ee_Initialize("carlosflores37")
 setwd("C:/Users/provincia_puno")
 
 ############ CARGAR SHP DE LAS PROVINCIAS #########################
 
-*puno_prov<- st_read("shp/Provincias.shp")
+puno_prov<- st_read("shp/Provincias.shp")
 
 
 #################### CARGAR LOS DEM ###############################
